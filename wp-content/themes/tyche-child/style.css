@@ -1,0 +1,36 @@
+/*!
+Theme Name: Tyche Child
+Author: FitNation
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fitnation
+Template: tyche
+*/
+
+.text-center{
+	text-align: center;
+}
+.padbtm15{
+	padding-bottom: 15px;
+}
+.top-social-link-item{
+	margin-right: 10px;
+}
+.widget.widget_tyche_recent .tyche-recent-post-alternate-widget .tyche-image {
+	float: none;
+  display: block;
+  height: auto;
+}
+.widget.widget_tyche_recent .tyche-recent-post-alternate-widget .tyche-post-content {
+	width: auto;
+	margin-top:10px;
+	margin-left: 0px; 
+}
+.tyche-blog-post .more-link {
+	margin-top: 15px;
+}
+@media (max-width: 767px){
+	.top-header-bar-container .top-header-bar li.top-social-link-item {
+		width: auto;
+}
