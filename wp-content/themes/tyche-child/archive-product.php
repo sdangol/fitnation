@@ -20,7 +20,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 $layout = get_theme_mod( 'tyche_shop_layout', 'fullwidth' );
-
 get_header( 'shop' ); ?>
 <div class="container">
 	<div class="row">

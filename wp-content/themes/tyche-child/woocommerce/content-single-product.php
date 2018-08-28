@@ -64,7 +64,51 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
 			do_action( 'woocommerce_single_product_summary' );
+			global $product;
+			$attributes = $product->get_attributes();
+			foreach ($attributes as $attribute):
 		?>
+		<div class="product-attribute-list">
+			<div>
+				<span class="product-attribute-title"><?php echo wc_attribute_label( $attribute->get_name() ); ?>:</span>
+			</div>
+			<div>
+			<?php
+			$values = array();
+
+				if ( $attribute->is_taxonomy() ) {
+					$attribute_taxonomy = $attribute->get_taxonomy_object();
+					$attribute_values = wc_get_product_terms( $product->get_id(), $attribute->get_name(), array( 'fields' => 'all' ) );
+
+					foreach ( $attribute_values as $attribute_value ) {
+						$value_name = esc_html( $attribute_value->name );
+
+						if ( $attribute_taxonomy->attribute_public ) {
+							$values[] = '<a href="' . esc_url( get_term_link( $attribute_value->term_id, $attribute->get_name() ) ) . '" rel="tag">' . $value_name . '</a>';
+						} else {
+							$values[] = $value_name;
+						}
+					}
+				} else {
+					$values = $attribute->get_options();
+
+					foreach ( $values as &$value ) {
+						$value = make_clickable( esc_html( $value ) );
+					}
+				}
+				foreach ($values as $v):
+				?>
+					<span class="product-attribute-term"><?php echo $v; ?></span>
+				<?php
+				endforeach;
+				?>
+			</div>
+		</div>
+
+	<?php endforeach; ?>
+		<div class="product-buy-info">
+			<h5>To buy this product, you can contact us at <?php echo esc_html( get_theme_mod( 'tyche_contact_phone', '732-757-2923' ) ); ?></h5>
+		</div>
 
 	</div><!-- .summary -->
 
@@ -76,7 +120,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		 * @hooked woocommerce_upsell_display - 15
 		 * @hooked woocommerce_output_related_products - 20
 		 */
-		do_action( 'woocommerce_after_single_product_summary' );
+		// do_action( 'woocommerce_after_single_product_summary' );
 	?>
 
 </div><!-- #product-<?php the_ID(); ?> -->

@@ -12,7 +12,7 @@
 <header class="top-header-bar-container">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 top-header-column">
 				<ul class="top-header-bar">
 					<!-- Email -->
 <!-- 					<li class="top-email">
@@ -24,18 +24,39 @@
 						<ul>
 					<?php foreach ($social_menu as $item): ?>
 							<li class="top-social-link-item">
-								<a href="<?php echo $item->url; ?>"><?php echo $item->title ?></a>
+								<a target="_blank" href="<?php echo $item->url; ?>"><?php echo $item->title ?></a>
 							</li>
 					<?php endforeach ?>
+							<li class="musclepharm-logo top-social-link-item">
+								<a href="https://www.musclepharm.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri().'/assets/images/musclepharm-invert.png'; ?>"></a>
+							</li>
+							<!-- Top Search mobile -->
+							<li class="top-search top-search-mobile">
+								<!-- Search Form -->
+								<form role="search" method="get" class="pull-right" id="searchform_topbar" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+									<label>
+										<span class="screen-reader-text"><?php esc_html__( 'Search for:', 'tyche' ); ?></span>
+										<input class="search-field-top-bar" id="search-field-top-bar" placeholder="<?php echo esc_attr__( 'Search ...', 'tyche' ); ?>" value="" name="s" type="search">
+									</label>
+									<button id="search-top-bar-submit" type="submit" class="search-top-bar-submit">
+										<span class="fa fa-search"></span>
+									</button>
+								</form>
+							</li><!-- / Top Search mobile -->
+							<li class="fn-delivery">
+								<div class="fn-title">FitNation</div>
+								<div>Free Delivery inside Kathmandu Valley</div>
+								<div>Call at <?php echo esc_html( get_theme_mod( 'tyche_contact_phone', '732-757-2923' ) ); ?></div>
+							</li>
 						</ul>
 					</li>
 					<?php if ( class_exists( 'WooCommerce' ) ) : ?>
 						<!-- Cart -->
-						<li class="top-cart">
+					<!-- 	<li class="top-cart">
 							<a href="<?php echo esc_url( Tyche_Helper::get_woocommerge_page( 'cart' ) ); ?>"><i class="fa fa-shopping-cart"></i> <?php echo esc_html__( 'My Cart', 'tyche' ); ?>
 								- <?php echo esc_html( get_woocommerce_currency_symbol( get_woocommerce_currency() ) . ' ' . Tyche_WooCommerce_Hooks::get_cart_total() ); ?>
 							</a>
-						</li> <!-- / Cart -->
+						</li> --> <!-- / Cart -->
 					<?php endif; ?>
 
 					<?php //if ( class_exists( 'WooCommerce' ) ) : ?>
@@ -71,7 +92,7 @@
 					?>
 					<?php if ( 'enabled' === $enable_search_bar ) : ?>
 						<!-- Top Search -->
-						<li class="top-search">
+						<li class="top-search top-search-desktop">
 							<!-- Search Form -->
 							<form role="search" method="get" class="pull-right" id="searchform_topbar" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 								<label>

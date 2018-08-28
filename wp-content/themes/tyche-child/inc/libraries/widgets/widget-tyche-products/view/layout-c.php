@@ -3,14 +3,18 @@ wp_enqueue_script( 'owlCarousel' );
 wp_enqueue_style( 'owlCarousel' );
 wp_enqueue_style( 'owlCarousel-theme' );
 
-$posts = Tyche_Helper::get_products( $params ); ?>
+$posts = new WP_Query(['posts_per_page' => -1,
+						'post_type' => 'product',
+						'order' => 'ASC']);
+?>
+
 <div class="row tyche-product-slider-container">
 	<div class="tyche-product-slider-navigation hidden-xs">
 		<a class="prev" href="#"><i class="fa fa-angle-left"></i></a>
 		<a class="next" href="#"><i class="fa fa-angle-right"></i></a>
 	</div>
 	<div class="col-xs-12">
-		<div class="owl-carousel tyche-product-slider" data-attr-elements="6">
+		<div class="owl-carousel tyche-product-slider" data-attr-elements="4">
 			<?php while ( $posts->have_posts() ) : $posts->the_post();
 				global $product;
 				global $post; ?>

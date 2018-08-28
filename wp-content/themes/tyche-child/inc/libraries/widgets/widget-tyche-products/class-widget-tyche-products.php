@@ -45,7 +45,7 @@ class Widget_Tyche_Products extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		$params = array(
-			'order'   => 'DESC',
+			'order'   => 'ASC',
 			'orderby' => 'date',
 		);
 

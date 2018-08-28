@@ -33,32 +33,11 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding container">
 			<div class="row">
-				<div class="col-sm-4 header-logo col-sm-offset-4 text-center">
-					<?php
-					if ( has_custom_logo() ) :
-						the_custom_logo();
-					else :
-						?>
-						<div class="site-title-description">
-							<?php
-							$header_textcolor = get_theme_mod( 'header_textcolor' );
-							if ( 'blank' !== $header_textcolor ) :
-								?>
-								<a class="site-title" href="<?php echo esc_url( get_home_url() ); ?>">
-									<?php Tyche_Helper::customize_partial_blogname(); ?>
-								</a>
-								<?php
-								$description = get_bloginfo( 'description', 'display' );
-								if ( $description || is_customize_preview() ) :
-									?>
-									<p class="site-description"> <?php Tyche_Helper::customize_partial_blogdescription(); ?> </p>
-								<?php endif; ?>
-
-							<?php endif; ?>
-						</div>
-						<?php
-					endif;
-					?>
+				<div class="header-logo">
+					<a href="<?php echo site_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri().'/assets/images/fitnation-logo.png'; ?>"></a>
+				</div>
+				<div class="col-md-12">
+					<h6 class="site-tagline">You Train We deliver</h6>
 				</div>
 
 				<?php /** if ( get_theme_mod( 'tyche_show_banner', false ) ) : ?>
@@ -101,6 +80,22 @@
 	</header><!-- #masthead -->
 
 	<?php
+	if (is_front_page()):
+	$header_video = get_theme_mod('fn_header_video');
+	?>
+	<div class="container">
+		<div class="video-container">
+			<video id="bgvid" playsinline autoplay loop>
+			  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+			<source src="<?php echo $header_video; ?>" type="video/mp4">
+			</video>
+			<div class="video-controls">
+				<button type="button" id="bgvid-pausebtn"><i class='fa fa-pause'></i></button>
+				<button type="button" id="bgvid-fullbtn"><i class='fa fa-arrows-alt'></i></button>
+			</div>
+		</div>
+	<?php endif; ?>
+	<?php
 	/**
 	 * Enable / Disable the main slider
 	 */
@@ -109,5 +104,5 @@
 		get_template_part( 'template-parts/main-slider' );
 	endif;
 	?>
-
+	</div>
 	<div class="site-content">
