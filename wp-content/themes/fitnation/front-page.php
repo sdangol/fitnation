@@ -129,8 +129,8 @@ get_header(); ?>
               <div class="s-12 m-12 l-4 text-right"> 
                 <div class="margin-right-50">
                   <i class="icon-sli-paper-plane text-primary text-size-40 margin-bottom-20"></i>
-                  <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Responsive Carousel</h3>
-                  <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, illum nulla facilisis</p>
+                  <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20"><?php the_title(); ?></h3>
+                  <!-- <p></p> -->
                 </div>
                 
                 <div class="line"> 
