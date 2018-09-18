@@ -1844,3 +1844,9 @@ a.tab-label.active-btn {
     padding: 30px !important;
   }
 } 
+
+/* Ambassador page css */
+.ambassador-page header.section-top-padding .full-width{
+  display: flex ;
+  align-items: flex-end;
+}
