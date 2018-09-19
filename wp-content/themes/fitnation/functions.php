@@ -23,7 +23,9 @@ function fitnation_scripts() {
 	wp_enqueue_script( 'jQuery-ui', get_template_directory_uri().'/js/jquery-ui.min.js' , array(),'1.0', true );
 	wp_enqueue_script( 'responsee', get_template_directory_uri().'/js/responsee.js' , array(),'1.0', true );
 	wp_enqueue_script( 'owl-carousel', get_template_directory_uri().'/owl-carousel/owl.carousel.min.js' , array(),'1.0', true );
+	wp_enqueue_script( 'masonry', get_template_directory_uri().'/js/masonry.js' , array(),'1.0', true );
 	wp_enqueue_script( 'fitnation-template-script', get_template_directory_uri().'/js/template-scripts.js' , array(),'1.0', true );
+	wp_enqueue_script( 'customJs', get_template_directory_uri().'/js/custom.js' , array(),'1.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'fitnation_scripts' );
