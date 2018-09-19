@@ -1890,7 +1890,7 @@ a.tab-label.active-btn {
 .woocommerce .products li{
   position: relative;
   background: #424242;
-  width: unset !important;
+  width: 19% !important;
   margin: 0 0 10px 0 !important;
 }
 .woocommerce .products li img{
