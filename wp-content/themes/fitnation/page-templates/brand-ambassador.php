@@ -27,13 +27,13 @@ while(have_posts()): the_post();
         </section>
 
       </header>
-      <section class="about-sukadev-dai">
+      <section class="about-sukadev-dai clearfix">
         <div class="m-6">
             <h2 class="text-l-size-25 text-size-30 text-dark" style="text-align: left;">About <b>Sukadev Karki</b></h2>
-            <p>Sukadev Karki is a Nepali inspirational athlete who did not let the terrible accident isolate him from either of his passions, motorcycling or bodybuilding. He has been a source of inspiration to many youths in Nepal. Sukadev Karki talked with colleges Nepal about his story of struggle.</p>
+            <p>A young Nepalese fitness athlete residing in Kathmandu, standing as an idol for many youths of the nation. His passion for fitness has been admired by people of all age groups. Sukadev came into rise and earned his respect after his comeback from a horrific life threatening accident that occurred in 2nd of Octobor 2015.</p>
         </div>
         <div class="m-6">
-
+          <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/about-sukadevdai.png">
         </div>
       </section>
     </main>
