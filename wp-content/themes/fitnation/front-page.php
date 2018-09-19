@@ -122,56 +122,58 @@ get_header(); ?>
         </div> 
         
         <div class="l-12 xl-7 center"> 
-          <div class="margin">
-            <!-- Left Column -->
-            <div class="s-12 m-12 l-4 text-right"> 
-              <div class="margin-right-50">
-                <i class="icon-sli-paper-plane text-primary text-size-40 margin-bottom-20"></i>
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Responsive Carousel</h3>
-                <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, illum nulla facilisis</p>
-              </div>
-              
-              <div class="line"> 
-                <hr class="break background-primary break-small right margin-top-bottom-40">
-              </div>
-              
-              <div class="margin-right-50">
-                <i class="icon-sli-bulb text-primary text-size-40 margin-bottom-20"></i>
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Tabs with URL Hash</h3>
-                <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, dolore nulla facilisis</p>
-              </div> 
-            </div>
-
-
-            <!-- Middle Column (carousel)-->
-            <div class="s-12 m-12 l-4">                                                                                        
-              <div class="carousel-default owl-carousel carousel-hide-arrows margin-m-top-bottom-50">
-                <?php while($products->have_posts()): $products->the_post(); ?>             
-                <div class="item">
-                  <?php the_post_thumbnail('medium') ?>
+          <div class="margin carousel-default owl-carousel carousel-hide-arrows">
+            <?php while($products->have_posts()): $products->the_post(); ?>
+            <div class="item">
+              <!-- Left Column -->
+              <div class="s-12 m-12 l-4 text-right"> 
+                <div class="margin-right-50">
+                  <i class="icon-sli-paper-plane text-primary text-size-40 margin-bottom-20"></i>
+                  <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20"><?php the_title(); ?></h3>
+                  <!-- <p></p> -->
                 </div>
-                <?php endwhile; ?>              
+                
+                <div class="line"> 
+                  <hr class="break background-primary break-small right margin-top-bottom-40">
+                </div>
+                
+                <div class="margin-right-50">
+                  <i class="icon-sli-bulb text-primary text-size-40 margin-bottom-20"></i>
+                  <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Tabs with URL Hash</h3>
+                  <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie consequat, dolore nulla facilisis</p>
+                </div> 
               </div>
-            </div> 
-            
-            <!-- Right Column -->
-            <div class="s-12 m-12 l-4"> 
-               <div class="margin-left-50">
-                <i class="icon-sli-heart text-primary text-size-40 margin-bottom-20"></i>
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Unlimited Color Variants</h3>
-                <p>Hendrerit in vulputate duis autem vel eum iriure dolor in molestie consequat, vel illum dolore nulla facilisis</p>
-              </div>
-              
-              <div class="line"> 
-                <hr class="break background-primary break-small margin-top-bottom-40">
-              </div>
-              
-              <div class="margin-left-50">
-                <i class="icon-sli-layers text-primary text-size-40 margin-bottom-20"></i>
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Responsive Navigation</h3>
-                <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie vel illum dolore nulla facilisis</p>
+
+              <!-- Middle Column (carousel)-->
+              <div class="s-12 m-12 l-4">                                                                                        
+                <div class="margin-m-top-bottom-50">
+                  <div class="item_thumbnail">
+                    <?php the_post_thumbnail('medium') ?>
+                  </div>
+                </div>
               </div> 
-            </div> 
+              
+              <!-- Right Column -->
+              <div class="s-12 m-12 l-4"> 
+                <div class="margin-left-50">
+                  <i class="icon-sli-heart text-primary text-size-40 margin-bottom-20"></i>
+                  <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Unlimited Color Variants</h3>
+                  <p>Hendrerit in vulputate duis autem vel eum iriure dolor in molestie consequat, vel illum dolore nulla facilisis</p>
+                </div>
+                
+                <div class="line"> 
+                  <hr class="break background-primary break-small margin-top-bottom-40">
+                </div>
+                
+                <div class="margin-left-50">
+                  <i class="icon-sli-layers text-primary text-size-40 margin-bottom-20"></i>
+                  <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Responsive Navigation</h3>
+                  <p>Hendrerit in vulputate duis autem vel eum iriure dolor in velit esse molestie vel illum dolore nulla facilisis</p>
+                </div> 
+              </div>
+            </div>
+          <?php endwhile; ?>              
+            
           </div>                                                                                              
         </div>       
       </section>

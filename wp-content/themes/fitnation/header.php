@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
   </head>
 
-  <body class="size-1280">
+  <body <?php body_class('size-1280'); ?>>
     <!-- HEADER -->
     <header role="banner" class="position-absolute">    
       <!-- Top Navigation -->
@@ -29,12 +29,15 @@
           <?php
             $header_menu = wp_get_nav_menu_items('main-menu');
             $total_menu = count($header_menu);
+
           ?>
           <!-- left menu items -->
           <div class="top-nav left-menu">
              <ul class="right top-ul chevron">
                 <?php for($i=0;$i<3;$i++): ?>
-                  <li><a href="<?php echo $header_menu[$i]->url ?>"><?php echo $header_menu[$i]->title; ?></a></li>
+                    <?php if (isset($header_menu[$i])): ?>
+                      <li><a href="<?php echo $header_menu[$i]->url ?>"><?php echo $header_menu[$i]->title; ?></a></li>
+                    <?php endif; ?>
                 <?php endfor; ?>
              </ul>
           </div>
@@ -53,7 +56,9 @@
           <div class="top-nav right-menu">
              <ul class="top-ul chevron">
                 <?php for($i=3;$i<$total_menu;$i++): ?>
-                  <li><a href="<?php echo $header_menu[$i]->url ?>"><?php echo $header_menu[$i]->title; ?></a></li>
+                  <?php if (isset($header_menu[$i])): ?>
+                    <li><a href="<?php echo $header_menu[$i]->url ?>"><?php echo $header_menu[$i]->title; ?></a></li>
+                  <?php endif; ?>
                 <?php endfor; ?>
             <!--     <li>
                   <a>Products</a>
