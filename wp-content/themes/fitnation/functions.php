@@ -178,3 +178,5 @@ function fitnation_widgets_init() {
 
 }
 add_action( 'widgets_init', 'fitnation_widgets_init' );
+
+include get_template_directory().'/inc/widgets/fitnation-features.php';
