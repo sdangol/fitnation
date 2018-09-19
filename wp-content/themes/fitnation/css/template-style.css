@@ -1843,25 +1843,10 @@ a.tab-label.active-btn {
   .padding-3x {
     padding: 30px !important;
   }
-}
-
-
-/* Clearfix css */
-.clearfix:before,
-.clearfix:after{
-  display: table;
-  content: "";
-}
-.clearfix:after{
-  clear: both;
-}
+} 
 
 /* Ambassador page css */
-.ambassador-page .about-sukadev-dai,
 .ambassador-page header.section-top-padding .full-width{
   display: flex ;
-  align-items: center;
-}
-.ambassador-page .about-sukadev-dai{
-  padding-left: 20px;
+  align-items: flex-end;
 }
