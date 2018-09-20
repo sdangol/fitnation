@@ -4,7 +4,7 @@
  * Template Name: Brand Ambassador
  */
 
-get_header();
+get_header('bg');
 while(have_posts()): the_post();
 ?>
 	<!-- MAIN -->
