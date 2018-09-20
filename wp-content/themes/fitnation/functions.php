@@ -12,8 +12,11 @@ function fitnation_scripts() {
 	wp_enqueue_style( 'fitnation-components', get_template_directory_uri().'/css/components.css' ) ;
 	wp_enqueue_style( 'fitnation-icons', get_template_directory_uri().'/css/icons.css' ) ;
 	wp_enqueue_style( 'fitnation-responsee', get_template_directory_uri().'/css/responsee.css' ) ;
+	wp_enqueue_style( 'font-awesome','https://use.fontawesome.com/releases/v5.3.1/css/all.css' ) ;
 	wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/owl-carousel/owl.carousel.css' ) ;
 	wp_enqueue_style( 'owl-carousel-theme', get_template_directory_uri().'/owl-carousel/owl.theme.css' ) ;
+	wp_enqueue_style( 'block-revealer', get_template_directory_uri().'/css/revealer.css' ) ;
+	wp_enqueue_style( 'pater', get_template_directory_uri().'/css/pater.css' ) ;
 	wp_enqueue_style( 'fitnation-template-style', get_template_directory_uri().'/css/template-style.css' ) ;
 	wp_enqueue_style( 'fitnation-google-fonts', "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" );
 
@@ -23,7 +26,12 @@ function fitnation_scripts() {
 	wp_enqueue_script( 'jQuery-ui', get_template_directory_uri().'/js/jquery-ui.min.js' , array(),'1.0', true );
 	wp_enqueue_script( 'responsee', get_template_directory_uri().'/js/responsee.js' , array(),'1.0', true );
 	wp_enqueue_script( 'owl-carousel', get_template_directory_uri().'/owl-carousel/owl.carousel.min.js' , array(),'1.0', true );
+	wp_enqueue_script( 'masonry', get_template_directory_uri().'/js/masonry.js' , array(),'1.0', true );
 	wp_enqueue_script( 'fitnation-template-script', get_template_directory_uri().'/js/template-scripts.js' , array(),'1.0', true );
+	wp_enqueue_script( 'animeJs', get_template_directory_uri().'/js/anime.min.js' , array(),'1.0', true );
+	wp_enqueue_script( 'scrollMonitor', get_template_directory_uri().'/js/scrollMonitor.js' , array(),'1.0', true );
+	wp_enqueue_script( 'main', get_template_directory_uri().'/js/main.js' , array(),'1.0', true );
+	wp_enqueue_script( 'customJs', get_template_directory_uri().'/js/custom.js' , array(),'1.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'fitnation_scripts' );

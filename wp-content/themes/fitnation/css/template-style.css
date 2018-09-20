@@ -292,6 +292,16 @@ nav.fixed, .fixed nav {
   width: 100%;
 }
 
+.logo .logo-white{
+  height: 95px;
+  width: unset;
+}
+
+.logo .logo-dark{
+  height: 50px;
+  width: unset !important;
+}
+
 /* Aside Nav */
 aside {
   border-left: 1px solid #e5e5e5;
@@ -1605,6 +1615,7 @@ nav.fixed .left-menu, nav.fixed .right-menu {
 }
 .logo-menu {
   width: 100px;
+  padding-top: 20px;
 }
 .left-menu, .right-menu {
   padding-top: 20px;
@@ -1845,8 +1856,132 @@ a.tab-label.active-btn {
   }
 } 
 
+
+
+
+
+
+/*My changes to template*/
+.clearfix:before,
+.clearfix:after{
+ content: "";
+ display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+.about-sukadev-dai{
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
 /* Ambassador page css */
 .ambassador-page header.section-top-padding .full-width{
   display: flex ;
   align-items: flex-end;
+}
+.ambassador-page header p{
+  color: #fff;
+}
+.ambassador-page h2 b{
+  color: #cd152e !important;
+}
+.about-sukadev-dai-thumbnail{
+  list-style-type: none;
+  padding-left: 0;
+}
+.about-sukadev-dai-thumbnail ul{
+  background: #dcdcdc;
+}
+.about-sukadev-dai-thumbnail li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.about-sukadev-dai-thumbnail li .fas{
+  color: #cd152e;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.about-sukadev-dai-thumbnail li span{
+  font-weight: 600;
+  color: #454545;
+}
+
+
+/* footer changes */
+footer .background-primary{
+  background: #cd152e !important;
+}
+footer .background-primary .text-dark{
+  color: #fff !important;
+}
+
+/*  Products page css */
+.woocommerce .products{
+  margin: 0 -10px;
+}
+.woocommerce .products li{
+  position: relative;
+  background: #424242;
+  width: unset;
+  margin: 0 0 10px 0 !important;
+}
+.woocommerce .products li img{
+  max-height: 500px;
+  max-width: 500px;
+}
+.woocommerce .products li h2.woocommerce-loop-product__title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  color: #83b729;
+  font-size: 24px !important;
+  font-weight: 700;
+}
+.woocommerce .products li .button{
+  position: absolute;
+  right: 10px;
+  bottom: 1em;
+  background: #aa1024;
+  color: #fff;
+}
+.woocommerce .products li .price{
+  position: absolute;
+  left: 20px;
+  right: 0;
+  bottom: 1em;
+}
+.woocommerce .products li .price span.amount{
+  color: #83b729;
+}
+.woocommerce .products li .price span.woocommerce-Price-currencySymbol{
+  color: #fff;
+}
+.woocommerce .products li:hover  a.woocommerce-LoopProduct-link.woocommerce-loop-product__link:before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+.woocommerce .products li:hover  .button{
+  background: #cd152e;
+}
+
+
+/* Home-page */
+.block-revealer{
+  display: inline-block;
+  position: relative;
+}
+.home-page #rev-1{
+  margin: 0 auto;
+}
+.home-page #rev-2{
+  max-width: 700px;
+  margin: 0 auto;
 }
