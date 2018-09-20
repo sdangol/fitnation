@@ -1881,7 +1881,43 @@ a.tab-label.active-btn {
   display: flex ;
   align-items: flex-end;
 }
+.ambassador-page header p{
+  color: #fff;
+}
+.ambassador-page h2 b{
+  color: #cd152e !important;
+}
+.about-sukadev-dai-thumbnail{
+  list-style-type: none;
+  padding-left: 0;
+}
+.about-sukadev-dai-thumbnail ul{
+  background: #dcdcdc;
+}
+.about-sukadev-dai-thumbnail li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.about-sukadev-dai-thumbnail li .fas{
+  color: #cd152e;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.about-sukadev-dai-thumbnail li span{
+  font-weight: 600;
+  color: #454545;
+}
 
+
+/* footer changes */
+footer .background-primary{
+  background: #cd152e !important;
+}
+footer .background-primary .text-dark{
+  color: #fff !important;
+}
 
 /*  Products page css */
 .woocommerce .products{
@@ -1890,7 +1926,7 @@ a.tab-label.active-btn {
 .woocommerce .products li{
   position: relative;
   background: #424242;
-  width: 19% !important;
+  width: unset;
   margin: 0 0 10px 0 !important;
 }
 .woocommerce .products li img{
@@ -1934,4 +1970,18 @@ a.tab-label.active-btn {
 }
 .woocommerce .products li:hover  .button{
   background: #cd152e;
+}
+
+
+/* Home-page */
+.block-revealer{
+  display: inline-block;
+  position: relative;
+}
+.home-page #rev-1{
+  margin: 0 auto;
+}
+.home-page #rev-2{
+  max-width: 700px;
+  margin: 0 auto;
 }

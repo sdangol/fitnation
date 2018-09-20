@@ -8,10 +8,23 @@ get_header(); ?>
     <main role="main">    
       <!-- Header -->
       <header class="section-top-padding background-image text-center" style="background-image:url(<?php header_image(); ?>)">
-        <h1 class="text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-130">
-          <?php echo get_theme_mod('fn_header_section_title'); ?>
+
+        <h1 class=" text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-130">
+          <div id="rev-1" class="block-revealer">
+            <div class="block-revealer__content">
+              <?php echo get_theme_mod('fn_header_section_title'); ?>
+            </div>
+            <div class="block-revealer__element"></div>
+          </div>
         </h1>
-        <p class="text-white"><?php echo get_theme_mod('fn_header_section_description'); ?></p>
+        <p class="text-white">
+          <div id="rev-2" class="block-revealer">
+            <div class="block-revealer__content">
+              <?php echo get_theme_mod('fn_header_section_description'); ?>
+            </div>  
+            <div class="block-revealer__element"></div>
+          </div>  
+        </p>
         <i class="slow icon-sli-arrow-down text-white margin-top-20 text-size-16"></i>
         <!-- Image -->
         <img class="margin-top-20 center" src="<?php echo wp_get_attachment_image_src( get_theme_mod('fn_header_section_foreground_image') , 'full' )[0]; ?>" alt="">
@@ -45,64 +58,101 @@ get_header(); ?>
         </div>
         <div class="line">
           <div class="margin2x">
+
             <div class="s-12 m-6 l-4 margin-bottom-60">
-              <div class="float-left">
-                <i class="icon-sli-emotsmile text-primary text-size-40 text-line-height-1"></i>
-              </div>
-              <div class="margin-left-60">
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">More Range Of Products</h3>
-                <p>We provide variey of supplements for you like whey, caesins and any more</p>
-                <a class="text-more-info text-primary" href="/">Read more</a>                
+              <div id="rev-3" class="block-revealer">
+                <div class="block-revealer__content">
+                  <div class="float-left">
+                    <i class="icon-sli-emotsmile text-primary text-size-40 text-line-height-1"></i>
+                  </div>
+                  <div class="margin-left-60">
+                    <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">More Range Of Products</h3>
+                    <p>We provide variey of supplements for you like whey, caesins and any more</p>
+                    <a class="text-more-info text-primary" href="/">Read more</a>                
+                  </div>
+                </div>
+                <div class="block-revealer__element"></div>
               </div>
             </div>
+
             <div class="s-12 m-6 l-4 margin-bottom-60">
-              <div class="float-left">
-                <i class="icon-sli-location-pin text-primary text-size-40 text-line-height-1"></i>
-              </div>
-              <div class="margin-left-60">
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Central Location</h3>
-                <p>We are located at the heart of kathmandu valley.</p>
-                <a class="text-more-info text-primary" href="/">Read more</a>                
+              <div class="block-revealer" id="rev-4">
+                <div class="block-revealer__content">
+                  <div class="float-left">
+                    <i class="icon-sli-location-pin text-primary text-size-40 text-line-height-1"></i>
+                  </div>
+                  <div class="margin-left-60">
+                    <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Central Location</h3>
+                    <p>We are located at the heart of kathmandu valley.</p>
+                    <a class="text-more-info text-primary" href="/">Read more</a>                
+                  </div>
+                </div>
+                <div class="block-revealer__element"></div>
               </div>
             </div>
+
             <div class="s-12 m-6 l-4 margin-bottom-60">
-              <div class="float-left">
-                <i class="icon-sli-badge text-primary text-size-40 text-line-height-1"></i>
+              <div class="block-revealer" id="rev-5">
+                <div class="block-revealer__content">
+                  <div class="float-left">
+                    <i class="icon-sli-badge text-primary text-size-40 text-line-height-1"></i>
+                  </div>
+                  <div class="margin-left-60">
+                    <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Genuine products</h3>
+                    <p>We provide genuine products from musclepharm.</p>
+                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                  </div>
+                </div>
+                <div class="block-revealer__element"></div>
+                
               </div>
-              <div class="margin-left-60">
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Genuine products</h3>
-                <p>We provide genuine products from musclepharm.</p>
-                <a class="text-more-info text-primary" href="/">Read more</a>                 
+            </div>
+
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div id="rev-6" class="block-revealer">
+                <div class="block-revealer__content">
+                  <div class="float-left">
+                    <i class="icon-sli-basket-loaded text-primary text-size-40 text-line-height-1"></i>
+                  </div>
+                  <div class="margin-left-60">
+                    <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Free Delivery</h3>
+                    <p>We provide free delivery services.</p>
+                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                  </div>
+                </div>
+                <div class="block-revealer__element"></div>
+              </div>
+            </div>
+
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="block-revealer" id="rev-7">
+                <div class="block-revealer__content">
+                  <div class="float-left">
+                    <i class="icon-sli-diamond text-primary text-size-40 text-line-height-1"></i>
+                  </div>
+                  <div class="margin-left-60">
+                    <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Standard Products</h3>
+                    <p>We care for your heath and fitness. Our products will be of standard quality.</p>
+                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                  </div>
+                </div>
+                <div class="block-revealer__element"></div>
               </div>
             </div>
             <div class="s-12 m-6 l-4 margin-m-bottom-60">
-              <div class="float-left">
-                <i class="icon-sli-basket-loaded text-primary text-size-40 text-line-height-1"></i>
-              </div>
-              <div class="margin-left-60">
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Free Delivery</h3>
-                <p>We provide free delivery services.</p>
-                <a class="text-more-info text-primary" href="/">Read more</a>                 
-              </div>
-            </div>
-            <div class="s-12 m-6 l-4 margin-m-bottom-60">
-              <div class="float-left">
-                <i class="icon-sli-diamond text-primary text-size-40 text-line-height-1"></i>
-              </div>
-              <div class="margin-left-60">
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Standard Products</h3>
-                <p>We care for your heath and fitness. Our products will be of standard quality.</p>
-                <a class="text-more-info text-primary" href="/">Read more</a>                 
-              </div>
-            </div>
-            <div class="s-12 m-6 l-4 margin-m-bottom-60">
-              <div class="float-left">
-                <i class="icon-sli-rocket text-primary text-size-40 text-line-height-1"></i>
-              </div>
-              <div class="margin-left-60">
-                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">And many more...</h3>
-                <p>Besides we provide various other facilities from products to trainings and support.</p>
-                <a class="text-more-info text-primary" href="/">Read more</a>                 
+              <div class="block-revealer" id="rev-8">
+                <div class="block-revealer__element">
+                  <div class="float-left">
+                    <i class="icon-sli-rocket text-primary text-size-40 text-line-height-1"></i>
+                  </div>
+                  <div class="margin-left-60">
+                    <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">And many more...</h3>
+                    <p>Besides we provide various other facilities from products to trainings and support.</p>
+                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                  </div>
+                  
+                </div>
+                <div class="block-revealer__element"></div>
               </div>
             </div>
           </div>
@@ -241,14 +291,17 @@ get_header(); ?>
       <!-- Section 7 -->
       <section class="section-small-padding background-dark text-center">      
         <div class="line">
-          <h2 class="text-white text-size-50 text-m-size-40 margin-bottom-20">Get <b>Free Version</b></h2>
+          <h2 class="text-white text-size-50 text-m-size-40 margin-bottom-20">Connect <b>With Us</b></h2>
           <div class="m-10 l-6 xl-4 center">
             <div class="margin">
               <a class="s-12 m-6 margin-s-bottom" href="/">
-                <img class="full-img right" src="img/google-play.svg" alt="">
+                <i class="fab fa-instagram"></i>
               </a>
               <a class="s-12 m-6" href="/">
-                <img class="full-img" src="img/app-store.svg" alt="">
+                <i class="fab fa-facebook-square"></i>
+              </a>              
+              <a class="s-12 m-6" href="/">
+                <i class="fab fa-twitter-square"></i>
               </a>
             </div>
           </div>                                                                                               
