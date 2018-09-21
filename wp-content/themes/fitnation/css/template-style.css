@@ -2031,12 +2031,54 @@ footer .background-primary .text-dark{
   height: 4px;
   bottom: 15px;
 }
-
-
+.header-nobg nav li a{
+  color: initial;
+}
+.header-nobg nav{
+  padding: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+.header-nobg nav .logo .logo-white{
+  height: 68px;
+}
 /* New colors addition */
 .red-bg{
   background: #cd152e !important;
 }
 .margin-20{
   margin: 20px 0;
+}
+
+/* product detail page */
+.woocommerce div.product div.summary{
+    background: #000;
+    padding: 10px 20px;
+}
+.woocommerce div.product div.summary .price::before{
+  content: "Rs";
+}
+.woocommerce div.product div.summary .woocommerce-product-details__short-description p strong{
+  color: #17a55a;
+  font-size: 18px;
+}
+.woocommerce div.product div.summary .product_meta .posted_in,
+.woocommerce div.product div.summary .product-attribute-list{
+  color: #fff;
+  margin-top: 10px;
+  display: block;
+}
+.woocommerce div.product div.summary .product_meta .posted_in a,
+.woocommerce div.product div.summary .product-attribute-list span.product-attribute-term{
+  background: #cd152e;
+  padding: 5px;
+  margin: 0 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.woocommerce div.product div.summary .product-attribute-list{
+  display: flex;
+}
+.woocommerce div.product div.summary .product-buy-info h5{
+  margin-top: 30px;
+  color: #17a55a;
 }

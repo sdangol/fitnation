@@ -38,7 +38,7 @@
 					              <a class="s-12 m-6 margin-s-bottom" href="/">
 									<h1 class="text-white"><b>Products By</b></h1>
 					              </a>
-					              <a class="s-12 m-6" href="/">
+					              <a class="s-12 m-6" href="musclepharm.com">
 					                <img class="full-img" src="http://www.fitnation.com.np/wp-content/themes/tyche-child/assets/images/musclepharm-invert.png" alt="">
 					              </a>
 					            </div>
