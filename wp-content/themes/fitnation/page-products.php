@@ -19,7 +19,7 @@
 			        <p class="text-white">
 			          <div id="rev-2" class="block-revealer">
 			            <div class="block-revealer__content text-white" style="max-width: 600px;">
-			              MusclePharm is an award winning and worldwide industry-leading sports nutrition brand offering a wide range of clinically proven, safe and effective dietary supplements to athletes of every sports and activity while supporting lifestyle goals of every kind. The brand promises to develop and bring to market the most scientifically advanced, safest nutritional and sports supplementation products possible to enhance athletic performance, strength and overall personal health-all without the use of banned substance.
+			              MusclePharm is an award winning and worldwide industry-leading sports nutrition brand offering a wide range of clinically proven, safe and effective dietary supplements to athletes of every sports and activity while supporting lifestyle goals of every kind. 
 			            </div>  
 			            <div class="block-revealer__element"></div>
 			          </div>  
