@@ -2051,7 +2051,7 @@ footer .background-primary .text-dark{
 
 /* product detail page */
 .woocommerce div.product div.summary{
-    background: #000;
+    background: #454545;
     padding: 10px 20px;
 }
 .woocommerce div.product div.summary .price::before{
@@ -2081,4 +2081,45 @@ footer .background-primary .text-dark{
 .woocommerce div.product div.summary .product-buy-info h5{
   margin-top: 30px;
   color: #17a55a;
+}
+.woocommerce div.product{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
+  color: #cd152e;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li{
+  background: #cd152e;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li a{
+  color: #fff;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs::before,
+.woocommerce div.product .woocommerce-tabs li{
+  border-color: #cd152e !important;
+  border-radius: 0 !important;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active::before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after{
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs .panel > h3,
+.woocommerce div.product .woocommerce-tabs .panel > h2{
+  color: #cd152e;
+}
+.woocommerce div.product .woocommerce-tabs .panel > h2:nth-child(1){
+  font-weight: 600;
+  color: #454545;
+}
+.woocommerce div.product .woocommerce-tabs .panel > h2:nth-child(2){
+  font-size: 30px;
+  font-weight: 500;
+  color: #454545;
+}
+.woocommerce div.product .woocommerce-tabs .panel > p{
+  margin-bottom: 10px;
+}
+.related.products{
+  height: unset !important;
 }
