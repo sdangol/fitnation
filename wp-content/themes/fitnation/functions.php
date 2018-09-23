@@ -67,23 +67,23 @@ add_action( 'after_setup_theme', 'fitnation_setup' );
 /**
  * Register fitnation posts
  */
-function register_fitnation_posts(){
+// function register_fitnation_posts(){
 
-	register_post_type('video',['labels' => ['name' => 'Videos',
-		'singular_name' => 'Video',
-		'add_new' => 'Add Video',
-		'add_new_item' => 'Add New Video',
-		'edit_item' => 'Edit Video',
-		'view_item' => 'View Video',
-		'not_found' => 'No Video Found'],
-		'public' => true,
-		'supports' => ['title','editor','thumbnail','author','excerpt','post-formats'],
-		'show_in_rest' => true,
-		'has_archive' => true,
-	]);
+// 	register_post_type('video',['labels' => ['name' => 'Videos',
+// 		'singular_name' => 'Video',
+// 		'add_new' => 'Add Video',
+// 		'add_new_item' => 'Add New Video',
+// 		'edit_item' => 'Edit Video',
+// 		'view_item' => 'View Video',
+// 		'not_found' => 'No Video Found'],
+// 		'public' => true,
+// 		'supports' => ['title','editor','thumbnail','author','excerpt','post-formats'],
+// 		'show_in_rest' => true,
+// 		'has_archive' => true,
+// 	]);
 
-}
-add_action('init','register_fitnation_posts');
+// }
+// add_action('init','register_fitnation_posts');
 
 /**
  * Add customizer options
@@ -197,4 +197,4 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-// add_filter('show_admin_bar', '__return_true');
+add_filter('show_admin_bar', '__return_true');
