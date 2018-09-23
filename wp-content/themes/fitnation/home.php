@@ -11,19 +11,25 @@
 			        <?php while(have_posts()): the_post(); ?>
 			        	<div class="post-item l-3 m-4 s-6 xs-12">
 			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<?php the_post_thumbnail( 'full' ); ?>
+			        		<div class="img-wrapper">
+				        		<?php the_post_thumbnail( 'full' ); ?>
+			        		</div>
 			        		<div class="post-content">
 			        			<?php the_excerpt(); ?>
 			        		</div>
-			        	</div><div class="post-item l-3 m-4 s-6 xs-12">
+			        	</div>			        	<div class="post-item l-3 m-4 s-6 xs-12">
 			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<?php the_post_thumbnail( 'full' ); ?>
+			        		<div class="img-wrapper">
+				        		<?php the_post_thumbnail( 'full' ); ?>
+			        		</div>
 			        		<div class="post-content">
 			        			<?php the_excerpt(); ?>
 			        		</div>
-			        	</div><div class="post-item l-3 m-4 s-6 xs-12">
+			        	</div>			        	<div class="post-item l-3 m-4 s-6 xs-12">
 			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<?php the_post_thumbnail( 'full' ); ?>
+			        		<div class="img-wrapper">
+				        		<?php the_post_thumbnail( 'full' ); ?>
+			        		</div>
 			        		<div class="post-content">
 			        			<?php the_excerpt(); ?>
 			        		</div>
