@@ -1910,7 +1910,9 @@ a.tab-label.active-btn {
   color: #454545;
 }
 
-
+a.button:hover{
+  color: #454545;
+}
 /* footer changes */
 footer .background-primary{
   background: #cd152e !important;
@@ -1918,7 +1920,16 @@ footer .background-primary{
 footer .background-primary .text-dark{
   color: #fff !important;
 }
-
+footer .padding.background-primary a{
+  margin: 0 10px;
+}
+footer ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+footer ul li a:hover{
+  color: #fff !important;
+}
 /*  Products page css */
 .woocommerce .products{
   margin: 0 -10px;
@@ -2269,9 +2280,11 @@ p.woocommerce-LostPassword.lost_password a{
   bottom: -2px;
 }
 
-.woocommerce-account .woocommerce-MyAccount-content{
-  width: calc(100% - 300px);
-  padding: 20px 30px;
+@media only screen and (min-width: 1025px){
+  .woocommerce-account .woocommerce-MyAccount-content{
+    width: calc(100% - 300px);
+    padding: 20px 30px;
+  }
 }
 .woocommerce-account .woocommerce-MyAccount-content  button,
 .woocommerce-account .woocommerce-MyAccount-content  a.button{
@@ -2315,3 +2328,123 @@ form.woocommerce-EditAccountForm.edit-account legend{
 form.woocommerce-EditAccountForm.edit-account em{
   color: #cd152e;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* my@responsive custom */
+@media only screen and (max-width: 375px){
+
+  .about-mp{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-mp .image img{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .products li{
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 480px){}
+
+@media only screen and (max-width: 768px){}
+
+@media only screen and (max-width: 992px){}

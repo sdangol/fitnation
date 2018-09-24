@@ -8,7 +8,7 @@
 ?>
 			<!-- MAIN -->
 		    <main role="main">
-		    	<section class="section-top-padding background-white">
+		    	<section class="section-top-padding background-white" id="customer_login">
 		    		<?php the_content(); ?>
 		    	</section>
 		    </main>   
