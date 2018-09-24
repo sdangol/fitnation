@@ -2269,9 +2269,11 @@ p.woocommerce-LostPassword.lost_password a{
   bottom: -2px;
 }
 
-.woocommerce-account .woocommerce-MyAccount-content{
-  width: calc(100% - 300px);
-  padding: 20px 30px;
+@media only screen and (min-width: 1025px){
+  .woocommerce-account .woocommerce-MyAccount-content{
+    width: calc(100% - 300px);
+    padding: 20px 30px;
+  }
 }
 .woocommerce-account .woocommerce-MyAccount-content  button,
 .woocommerce-account .woocommerce-MyAccount-content  a.button{
