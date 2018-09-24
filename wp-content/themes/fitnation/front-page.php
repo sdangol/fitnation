@@ -182,7 +182,9 @@ get_header('bg');
           <h2 class="text-dark text-size-50 text-m-size-40">Our <b>Products</b></h2>
           <i class="icon-chevron_down text-primary margin-bottom-50 text-size-20"></i>
         </div>
-
+        <div class="block-revealer" id="rev_our_products" style="opacity: 0;">
+          &nbsp;
+        </div>
         <div class="l-12 xl-7 center">
           <div class="margin">
             <!-- Left Column -->
@@ -227,9 +229,6 @@ get_header('bg');
 
                <!-- Right Column -->
             <div class="s-12 m-12 l-4">
-              
-              <div class="block-revealer" id="rev_our_products">
-              </div>
               <div class="block-revealer" id="product_3">
                 <div class="block-revealer__content">
                  <div class="margin-left-50">

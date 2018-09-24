@@ -1,8 +1,10 @@
-$('.products').masonry({
-  // options
-  itemSelector: '.product',
-  fitWidth: true,
-  gutter: 10
+$(document).on('ready',function(){
+	$('.products').masonry({
+	  // options
+	  itemSelector: '.product',
+	  fitWidth: true,
+	  gutter: 10
+	});
 });
 
 
@@ -18,7 +20,7 @@ $(document).on('ready',function(){
 					
 					var rev1 = new RevealFx(document.querySelector('#rev-1'), {
 						revealSettings : {
-							bgcolor: '#7f40f1',
+							bgcolor: '#cd152e',
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
 							}
@@ -28,7 +30,7 @@ $(document).on('ready',function(){
 
 					var rev2 = new RevealFx(document.querySelector('#rev-2'), {
 						revealSettings : {
-							bgcolor: '#fcf652',
+							bgcolor: '#cd152e',
 							delay: 250,
 							onCover: function(contentEl, revealerEl) {
 								contentEl.style.opacity = 1;
@@ -43,7 +45,7 @@ $(document).on('ready',function(){
 						watcher_1 = scrollMonitor.create(scrollElemToWatch_1, -300),				
 						rev3 = new RevealFx(scrollElemToWatch_1, {
 							revealSettings : {
-								bgcolor: '#fcf652',
+								bgcolor: '#cd152e ',
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
 								}
@@ -51,7 +53,7 @@ $(document).on('ready',function(){
 						}),
 						rev4 = new RevealFx(document.querySelector('#rev-4'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -60,7 +62,7 @@ $(document).on('ready',function(){
 						}),
 						rev5 = new RevealFx(document.querySelector('#rev-5'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -69,7 +71,7 @@ $(document).on('ready',function(){
 						});						
 						rev6 = new RevealFx(document.querySelector('#rev-6'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -78,7 +80,7 @@ $(document).on('ready',function(){
 						});						
 						rev7 = new RevealFx(document.querySelector('#rev-7'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -87,7 +89,7 @@ $(document).on('ready',function(){
 						});						
 						rev8 = new RevealFx(document.querySelector('#rev-8'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -99,7 +101,7 @@ $(document).on('ready',function(){
 						watcher_2 = scrollMonitor.create(scrollElemToWatch_2, -300),
 						rev_our_products = new RevealFx(scrollElemToWatch_2, {
 							revealSettings : {
-								bgcolor: '#fcf652',
+								bgcolor: '#cd152e ',
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
 								}
@@ -107,7 +109,7 @@ $(document).on('ready',function(){
 						}),
 						product_1 = new RevealFx(document.querySelector('#product_1'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								direction: 'rl',
 								delay: 250,
 								onCover: function(contentEl, revealerEl) {
@@ -117,8 +119,8 @@ $(document).on('ready',function(){
 						}),
 						product_2 = new RevealFx(document.querySelector('#product_2'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
-								direction: 'lr',
+								bgcolor: '#cd152e ',
+								direction: 'rl',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
 									contentEl.style.opacity = 1;
@@ -127,7 +129,7 @@ $(document).on('ready',function(){
 						}),	
 						product_3 = new RevealFx(document.querySelector('#product_3'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								direction: 'lr',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
@@ -138,7 +140,7 @@ $(document).on('ready',function(){
                   
 						product_4 = new RevealFx(document.querySelector('#product_4'), {
 							revealSettings : {
-								bgcolor: '#7f40f1',
+								bgcolor: '#cd152e ',
 								direction: 'lr',
 								delay: 500,
 								onCover: function(contentEl, revealerEl) {
@@ -212,7 +214,7 @@ $(document).on('ready',function(){
 					
 					trigger_1.addEventListener('click', function() {
 						rev12.reveal({
-							bgcolor: '#c1c0b7',
+							bgcolor: '#cd152e ',
 							duration: 300,
 							onStart: function(contentEl, revealerEl) { contentEl.style.opacity = 0; },
 							onCover: function(contentEl, revealerEl) { contentEl.style.opacity = 1; }
@@ -221,7 +223,7 @@ $(document).on('ready',function(){
 
 					trigger_2.addEventListener('click', function() {
 						rev12.reveal({
-							bgcolor: '#c1c0b7',
+							bgcolor: '#cd152e ',
 							duration: 300,
 							direction: 'rl',
 							onStart: function(contentEl, revealerEl) { contentEl.style.opacity = 0; },
@@ -231,7 +233,7 @@ $(document).on('ready',function(){
 
 					trigger_3.addEventListener('click', function() {
 						rev12.reveal({
-							bgcolor: '#c1c0b7',
+							bgcolor: '#cd152e ',
 							easing: 'easeOutExpo',
 							direction: 'bt',
 							onStart: function(contentEl, revealerEl) { 
@@ -253,7 +255,7 @@ $(document).on('ready',function(){
 
 					trigger_4.addEventListener('click', function() {
 						rev12.reveal({
-							bgcolor: '#c1c0b7',
+							bgcolor: '#cd152e ',
 							duration: 300,
 							direction: 'tb',
 							onStart: function(contentEl, revealerEl) { 
@@ -279,7 +281,7 @@ $(document).on('ready',function(){
 
 					trigger_5.addEventListener('click', function() {
 						rev12.reveal({
-							bgcolor: '#7f40f1',
+							bgcolor: '#cd152e ',
 							duration: 400,
 							easing: 'easeInOutQuad',
 							onStart: function(contentEl, revealerEl) { 
