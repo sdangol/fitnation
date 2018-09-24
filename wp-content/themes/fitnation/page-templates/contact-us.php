@@ -18,7 +18,7 @@ while(have_posts()): the_post();
           <!-- <p class="animated-element text-white"></p> -->
           
           <!-- white full width arrow object -->
-          <img class="arrow-object" src="img/arrow-object-white.svg" alt="">
+          <img class="arrow-object" src="<?php echo get_template_directory_uri() . '/img/arrow-object-white.svg'; ?>" alt="">
         </header>
         
         <!-- Section 1 -->
