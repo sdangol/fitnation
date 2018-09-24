@@ -2331,120 +2331,39 @@ form.woocommerce-EditAccountForm.edit-account em{
 
 
 
+/* FUQ page */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* my@responsive custom */
-@media only screen and (max-width: 375px){
-
-  .about-mp{
-    display: flex;
-    flex-direction: column;
-  }
-  .about-mp .image img{
-    margin: 0 auto;
-    margin-top: 10px;
-  }
-  .products li{
-    width: 100% !important;
-  }
+.ewd-ufaq-post-margin-symbol span{
+  color: #fff;
 }
 
-@media only screen and (max-width: 480px){}
 
-@media only screen and (max-width: 768px){}
+.ufaq-faq-div{
+  display: block;
+  padding: 1%;
+}
+div.ufaq-faq-title h4{
+  font-weight: 600;
+  color: #fff;
+}
 
-@media only screen and (max-width: 992px){}
+.ufaq-faq-div.ewd-ufaq-post-active .ufaq-faq-title{
+  background: #cd152e;
+}
+.ufaq-faq-div.ewd-ufaq-post-active .ewd-ufaq-post-margin-symbol span{
+  color: #fff;
+}
+.ufaq-faq-div.ewd-ufaq-post-active div.ufaq-faq-title h4{
+  color: #fff;
+}
+.ufaq-faq-title{
+  padding: 5px 8px;
+  background: #454545;
+}
+#ufaq-faq-list{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ufaq-faq-body{
+  background: #f0f0f0;
+}
