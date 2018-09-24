@@ -14,14 +14,28 @@
 				        <div class="image-wrapper">
 				        	<?php the_post_thumbnail('full') ?>
 				        	<div class="bottom-helper">
-					        	<span class="date-created">23 March, 2016</span>
-					        	<span class="creator">Admin</span>
+					        	<span class="date-created"><?php the_date(); ?></span>
+					        	<span class="creator"><?php the_author(); ?></span>
 				        	</div>
 				        </div>
 			    		<?php the_content(); ?>
 		    		</div>
 
 		    		<div class="blogs clearfix">
+					<?php
+						//for use in the loop, list 5 post titles related to first tag on current post
+						$tags = wp_get_post_tags($post->ID);
+						if ($tags) {
+							$first_tag = $tags[0]->term_id;
+							$args=array(
+								'tag__in' => array($first_tag),
+								'post__not_in' => array($post->ID),
+								'posts_per_page'=>5,
+							);
+							$related = new WP_Query($args);
+							if( $related->have_posts() ) {
+							while ($related->have_posts()) : $related->the_post();
+					?>
 		    			<div class="post-item l-3 m-6 s-12 xs-12" style="float: right;">
 			        		<h3 class="text-dark"><?php the_title(); ?></h3>
 			        		<div class="img-wrapper">
@@ -30,23 +44,13 @@
 			        		<div class="post-content">
 			        			<?php the_excerpt(); ?>
 			        		</div>
-			        	</div>		    			<div class="post-item l-3 m-6 s-12 xs-12" style="float: right;">
-			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<div class="img-wrapper">
-				        		<?php the_post_thumbnail( 'full' ); ?>
-			        		</div>
-			        		<div class="post-content">
-			        			<?php the_excerpt(); ?>
-			        		</div>
-			        	</div>		    			<div class="post-item l-3 m-6 s-12 xs-12" style="float: right;">
-			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<div class="img-wrapper">
-				        		<?php the_post_thumbnail( 'full' ); ?>
-			        		</div>
-			        		<div class="post-content">
-			        			<?php the_excerpt(); ?>
-			        		</div>
-			        	</div>			
+						</div>
+						<?php
+							endwhile;
+							}
+							wp_reset_query();
+							}
+						?>
 		    		</div>
 
 		    	</section>

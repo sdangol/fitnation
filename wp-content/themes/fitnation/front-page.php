@@ -39,10 +39,10 @@ get_header('bg');
         <div class="line">
           <div class="m-10 l-6 xl-4 center">
             <div class="margin">
-              <a class="s-12 m-6 margin-s-bottom" href="<?php echo site_url('/brand-ambassador/'); ?>">
+              <a class="s-12 m-6 margin-s-bottom" href="<?php echo site_url('/hall-of-fame/'); ?>">
                 <img class="full-img right" src="<?php echo get_template_directory_uri() . '/img/google-play.svg'; ?>" alt="">
               </a>
-              <a class="s-12 m-6" href="<?php echo site_url('/hall-of-fame/'); ?>">
+              <a class="s-12 m-6" href="<?php echo site_url('/brand-ambassador/'); ?>">
                 <img class="full-img" src="<?php echo get_template_directory_uri() . '/img/app-store.svg'; ?>" alt="">
               </a>
             </div>
