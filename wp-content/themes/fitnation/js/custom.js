@@ -1,4 +1,4 @@
-$(document).on('ready',function(){
+$(window).load(function(){
 	$('.products').masonry({
 	  // options
 	  itemSelector: '.product',

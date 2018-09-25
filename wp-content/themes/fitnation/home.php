@@ -17,23 +17,7 @@
 			        		<div class="post-content">
 			        			<?php the_excerpt(); ?>
 			        		</div>
-			        	</div>			        	<div class="post-item l-3 m-6 s-12 xs-12">
-			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<div class="img-wrapper">
-				        		<?php the_post_thumbnail( 'full' ); ?>
-			        		</div>
-			        		<div class="post-content">
-			        			<?php the_excerpt(); ?>
-			        		</div>
-			        	</div>			        	<div class="post-item l-3 m-6 s-12 xs-12">
-			        		<h3 class="text-dark"><?php the_title(); ?></h3>
-			        		<div class="img-wrapper">
-				        		<?php the_post_thumbnail( 'full' ); ?>
-			        		</div>
-			        		<div class="post-content">
-			        			<?php the_excerpt(); ?>
-			        		</div>
-			        	</div>
+						</div>
     				<?php endwhile; ?>
 		    	</section>
 		    </main>   

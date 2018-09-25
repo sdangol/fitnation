@@ -181,7 +181,7 @@ function fitnation_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Footer Widgets',
 		'id'            => 'footer_widgets',
-		'before_widget' => '<div class="s-12 m-6 l-3 xl-5">',
+		'before_widget' => '<div class="s-12 m-6 l-3 xl-2">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="text-white text-strong">',
 		'after_title'   => '</h2>',
@@ -200,4 +200,6 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-add_filter('show_admin_bar', '__return_true');
+// add_filter('show_admin_bar', '__return_true');
+
+remove_action('woocommerce_single_product_summary','woocommerce_template_single_price');

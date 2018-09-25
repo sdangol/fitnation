@@ -8,7 +8,8 @@ get_header('bg');
     <!-- MAIN -->
     <main role="main">
       <!-- Header -->
-      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(<?php header_image(); ?>)  no-repeat;background-size: 100%;">
+
+      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(<?php header_image(); ?>)  no-repeat;background-size:100%;">
 
         <h1 class=" text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-130">
           <div id="rev-1" class="block-revealer">
@@ -39,10 +40,10 @@ get_header('bg');
         <div class="line">
           <div class="m-10 l-6 xl-4 center">
             <div class="margin">
-              <a class="s-12 m-6 margin-s-bottom" href="/">
+              <a class="s-12 m-6 margin-s-bottom" href="#">
                 <img class="full-img right" src="<?php echo get_template_directory_uri() . '/img/google-play.svg'; ?>" alt="">
               </a>
-              <a class="s-12 m-6" href="/">
+              <a class="s-12 m-6" href="<?php echo site_url('/brand-ambassador/'); ?>">
                 <img class="full-img" src="<?php echo get_template_directory_uri() . '/img/app-store.svg'; ?>" alt="">
               </a>
             </div>
@@ -69,7 +70,7 @@ get_header('bg');
                   <div class="margin-left-60">
                     <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">More Range Of Products</h3>
                     <p>We provide variey of supplements for you like whey, caesins and any more</p>
-                    <a class="text-more-info text-primary" href="/">Read more</a>                
+                    <!-- <a class="text-more-info text-primary" href="/">Read more</a>                 -->
                   </div>
                 </div>
                 <div class="block-revealer__element"></div>
@@ -85,7 +86,7 @@ get_header('bg');
                   <div class="margin-left-60">
                     <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Central Location</h3>
                     <p>We are located at the heart of kathmandu valley.</p>
-                    <a class="text-more-info text-primary" href="/">Read more</a>                
+                    <!-- <a class="text-more-info text-primary" href="/">Read more</a>                 -->
                   </div>
                 </div>
                 <div class="block-revealer__element"></div>
@@ -101,7 +102,7 @@ get_header('bg');
                   <div class="margin-left-60">
                     <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Genuine products</h3>
                     <p>We provide genuine products from musclepharm.</p>
-                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                    <!-- <a class="text-more-info text-primary" href="/">Read more</a>                  -->
                   </div>
                 </div>
                 <div class="block-revealer__element"></div>
@@ -118,7 +119,7 @@ get_header('bg');
                   <div class="margin-left-60">
                     <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Free Delivery</h3>
                     <p>We provide free delivery services.</p>
-                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                    <!-- <a class="text-more-info text-primary" href="/">Read more</a>                  -->
                   </div>
                 </div>
                 <div class="block-revealer__element"></div>
@@ -134,7 +135,7 @@ get_header('bg');
                   <div class="margin-left-60">
                     <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Standard Products</h3>
                     <p>We care for your heath and fitness. Our products will be of standard quality.</p>
-                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                    <!-- <a class="text-more-info text-primary" href="/">Read more</a>                  -->
                   </div>
                 </div>
                 <div class="block-revealer__element"></div>
@@ -149,7 +150,7 @@ get_header('bg');
                   <div class="margin-left-60">
                     <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">And many more...</h3>
                     <p>Besides we provide various other facilities from products to trainings and support.</p>
-                    <a class="text-more-info text-primary" href="/">Read more</a>                 
+                    <!-- <a class="text-more-info text-primary" href="/">Read more</a>                  -->
                   </div>
                   
                 </div>
@@ -328,7 +329,7 @@ wp_reset_postdata();
           <div class="m-10 l-6 xl-4 center">
             <p style="margin-bottom: 20px;color: #fff;">We have products for atheletes and individuals, who are fitness enthusiasts. Lets connect with our portal. </p>
             <div class="margin">
-              <button class="button">Sign up</button>
+              <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ).'?action=register'; ?>" class="button">Sign up</a>
             </div>
           </div>
         </div>

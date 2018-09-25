@@ -2085,9 +2085,10 @@ footer ul li a:hover{
 .woocommerce div.product div.summary .product-attribute-list span.product-attribute-term{
   background: #cd152e;
   padding: 5px;
-  margin: 0 20px;
+  margin: 5px 20px;
   color: #fff;
   font-weight: 600;
+  display: inline-block;
 }
 .woocommerce div.product div.summary .product-attribute-list{
   display: flex;
