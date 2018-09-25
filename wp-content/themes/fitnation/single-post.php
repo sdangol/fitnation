@@ -24,13 +24,12 @@
 		    		<div class="blogs clearfix">
 					<?php
 						//for use in the loop, list 5 post titles related to first tag on current post
-						$tags = wp_get_post_tags($post->ID);
+						$tags = wp_get_post_tags($post->ID,['fields' => 'ids']);
 						if ($tags) {
-							$first_tag = $tags[0]->term_id;
 							$args=array(
-								'tag__in' => array($first_tag),
+								'tag__in' => $tags,
 								'post__not_in' => array($post->ID),
-								'posts_per_page'=>5,
+								'posts_per_page'=>3,
 							);
 							$related = new WP_Query($args);
 							if( $related->have_posts() ) {
@@ -49,7 +48,7 @@
 							endwhile;
 							}
 							wp_reset_query();
-							}
+						}
 						?>
 		    		</div>
 

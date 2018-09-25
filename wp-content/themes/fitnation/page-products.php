@@ -6,7 +6,7 @@
 			<!-- MAIN -->
 		    <main role="main">
 		    	<!-- Header -->
-			      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(<?php header_image(); ?>)  no-repeat">
+			      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(<?php header_image(); ?>)  no-repeat;background-size:100%;">
 
 			        <h1 class=" text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-130">
 			          <div id="rev-1" class="block-revealer">

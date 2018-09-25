@@ -10,7 +10,7 @@ while(have_posts()): the_post();
 	<!-- MAIN -->
     <main role="main" class="ambassador-page">
       <!-- Brand Ambassad -->
-      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(http://localhost/fitnation-v2/wp-content/uploads/2018/09/img-05-copy.jpg)">
+      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(http://localhost/fitnation-v2/wp-content/uploads/2018/09/img-05-copy.jpg) no-repeat;background-size:100%;">
         
         <section class=" full-width">        
           <div class="m-12 l-6 xl-7 xxl-8">

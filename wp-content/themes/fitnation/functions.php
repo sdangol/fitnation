@@ -198,3 +198,5 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 // add_filter('show_admin_bar', '__return_true');
+
+remove_action('woocommerce_single_product_summary','woocommerce_template_single_price');

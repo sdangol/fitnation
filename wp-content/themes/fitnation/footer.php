@@ -19,8 +19,13 @@
           <div class="margin2x">
           <div class="s-12 m-6 l-3 xl-5">
               <h4 class="text-white text-strong">Our Mission</h4>
-              <p>
+              <!-- <p>
                 FitNation started as a concept that was initiated by <b class="text-size-20">Kharel Organization Pvt.Ltd.</b> to address the desire of <b class="text-size-20">general public</b> to maintain a proper physique and have a good health. <b class="text-size-20">Nutrition</b> along with a combination of various exercises plays a vital role to achieve a <b class="text-size-20">healthy lifestyle</b>.
+              </p> -->
+              <p>
+              Providing a common ground to <b class="text-size-20">fitness enthusiast</b> all over the world creating a hub where they can share their stories, experiences (good/bad) regarding <b class="text-size-20">diets, supplementation, exercise, lifestyle</b> and any other queries related to health and fitness.</p>
+              <p>
+              Offering a <b class="text-size-20">range of products</b> that will <b class="text-size-20">exceed your expectations</b> and help you achieve your goals. We promise our customers true value for their money with the best in <b class="text-size-20">quality products</b> available at the global market.
               </p>
           </div>
             <?php if ( is_active_sidebar( 'footer_widgets' ) ) : ?>

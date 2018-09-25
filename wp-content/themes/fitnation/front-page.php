@@ -8,7 +8,7 @@ get_header('bg');
     <!-- MAIN -->
     <main role="main">
       <!-- Header -->
-      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(<?php header_image(); ?>)  no-repeat">
+      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(<?php header_image(); ?>)  no-repeat;background-size:100%;">
 
         <h1 class=" text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-130">
           <div id="rev-1" class="block-revealer">
@@ -39,7 +39,7 @@ get_header('bg');
         <div class="line">
           <div class="m-10 l-6 xl-4 center">
             <div class="margin">
-              <a class="s-12 m-6 margin-s-bottom" href="<?php echo site_url('/hall-of-fame/'); ?>">
+              <a class="s-12 m-6 margin-s-bottom" href="#">
                 <img class="full-img right" src="<?php echo get_template_directory_uri() . '/img/google-play.svg'; ?>" alt="">
               </a>
               <a class="s-12 m-6" href="<?php echo site_url('/brand-ambassador/'); ?>">
