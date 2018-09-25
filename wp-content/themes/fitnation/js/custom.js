@@ -5,6 +5,23 @@ $(document).on('ready',function(){
 	  fitWidth: true,
 	  gutter: 10
 	});
+
+	$('.slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          arrows: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+          arrows: true
+        });
 });
 
 

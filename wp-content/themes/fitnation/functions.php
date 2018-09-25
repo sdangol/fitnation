@@ -17,6 +17,8 @@ function fitnation_scripts() {
 	wp_enqueue_style( 'owl-carousel-theme', get_template_directory_uri().'/owl-carousel/owl.theme.css' ) ;
 	wp_enqueue_style( 'block-revealer', get_template_directory_uri().'/css/revealer.css' ) ;
 	wp_enqueue_style( 'pater', get_template_directory_uri().'/css/pater.css' ) ;
+	wp_enqueue_style( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' ) ;
+	wp_enqueue_style( 'slickertheme', get_template_directory_uri().'/css/slick-theme.css' ) ;
 	wp_enqueue_style( 'fitnation-template-style', get_template_directory_uri().'/css/template-style.css' ) ;
 	wp_enqueue_style( 'fitnation-google-fonts', "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" );
 
@@ -30,6 +32,7 @@ function fitnation_scripts() {
 	wp_enqueue_script( 'fitnation-template-script', get_template_directory_uri().'/js/template-scripts.js' , array(),'1.0', true );
 	wp_enqueue_script( 'animeJs', get_template_directory_uri().'/js/anime.min.js' , array(),'1.0', true );
 	wp_enqueue_script( 'scrollMonitor', get_template_directory_uri().'/js/scrollMonitor.js' , array(),'1.0', true );
+	wp_enqueue_script( 'slickerjs', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' , array(),'1.0', true );
 	wp_enqueue_script( 'main', get_template_directory_uri().'/js/main.js' , array(),'1.0', true );
 	wp_enqueue_script( 'customJs', get_template_directory_uri().'/js/custom.js' , array(),'1.0', true );
 
