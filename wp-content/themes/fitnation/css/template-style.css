@@ -1948,7 +1948,36 @@ footer ul li a:hover{
   max-width: 500px;
   margin-top: 20px !important;
 }
-.woocommerce .products li h2.woocommerce-loop-product__title{
+.woocommerce ul.products li.product .woocommerce-loop-product__title{
+  background: #8ad701;
+  font-size: 22px;
+  color: #454545;
+  padding-left: 10px !important;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+.woocommerce ul.products li.product .price{
+  background: #8ad701;
+  margin: 0;
+  color: #fff;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+.woocommerce ul.products li.product:hover .woocommerce-loop-product__title:before{
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #8ad701;
+  right: 40px;
+  top: -10px;
+  transform: rotate(45deg);
+}
+/*.woocommerce .products li h2.woocommerce-loop-product__title{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1978,20 +2007,22 @@ footer ul li a:hover{
   right: 0;
   bottom: 1em;
 }
-.woocommerce .products li .price span.amount{
-  color: #fff;
-  font-size: 18px;
-}
+
 .woocommerce .products li .price span.woocommerce-Price-currencySymbol{
   color: #83b729;
   font-weight: 600;
+}*/
+.woocommerce .products li .price span.amount{
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  background: #454545;
 }
-
 .woocommerce .products li:hover  a.woocommerce-LoopProduct-link.woocommerce-loop-product__link:before{
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.0);
   position: absolute;
 }
 .woocommerce .products li  a.woocommerce-LoopProduct-link.woocommerce-loop-product__link:before{
