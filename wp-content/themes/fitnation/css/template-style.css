@@ -2447,3 +2447,79 @@ div.ufaq-faq-title h4{
   color: #fff;
   margin-top: 5px;
 }
+main header.sction-top-padding{
+  background-size: cover !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* my@resposive ness */
+@media only screen and (max-width: 480px){
+  header.section-top-padding.background-image{
+    background-size: cover !important;
+  }
+  .about-mp{
+    align-items: flex-end;
+  }
+  .about-mp .message{
+    padding-bottom: 15px;
+  }
+  .about-sukadev-dai-thumbnail li{
+    flex-basis: 100%;
+  }
+  .about-sukadev-dai-thumbnail ul{
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .ambassador-page header div img{
+    position: absolute;
+    bottom: 0; 
+    right: -68px;
+  }
+  .ambassador-page header div .padding-2x{
+    position: relative;
+    left: -100px;
+  }
+  .ambassador-page header{
+    overflow-x: hidden;
+  }
+  .about-sukadev-dai{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
+  }
+  .after-accident .line{
+    display: flex;
+    flex-direction: column;
+  }
+  .after-accident .line .text-center{
+    padding-bottom: 20px;
+    text-align: left !important;
+  }
+  /* hall-of-faem */
+  .halloffame .about-sukadev-dai{
+    display: flex;
+    flex-direction: column;
+  }
+  .halloffame .about-sukadev-dai:nth-child(2),
+  .halloffame .about-sukadev-dai:nth-child(4){
+    flex-direction: column-reverse;
+  }
+
+}

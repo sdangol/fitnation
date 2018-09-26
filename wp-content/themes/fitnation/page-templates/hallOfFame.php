@@ -8,7 +8,7 @@ get_header('bg');
 while(have_posts()): the_post();
 ?>
 	<!-- MAIN -->
-    <main role="main" class="ambassador-page">
+    <main role="main" class="ambassador-page halloffame">
       <!-- Brand Ambassad -->
       <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(http://localhost/fitnation-v2/wp-content/uploads/2018/09/img-05-copy.jpg)">
         

@@ -79,7 +79,7 @@ while(have_posts()): the_post();
         </div>
       </section>
 
-      <section class="section-small-padding text-left" style="background: #fff;">
+      <section class="section-small-padding text-left after-accident" style="background: #fff;">
         <div class="line" style="display: flex;align-items: center;">
           <div class="s-12 m-6 l-4 text-center">
             <span class="fa fa-dove" style="color: #cd152e;font-size: 110px;"></span>
