@@ -10,11 +10,11 @@ while(have_posts()): the_post();
 	<!-- MAIN -->
     <main role="main" class="ambassador-page">
       <!-- Brand Ambassad -->
-      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(http://localhost/fitnation-v2/wp-content/uploads/2018/09/img-05-copy.jpg) no-repeat;background-size:100%;">
+      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(<?php echo get_template_directory_uri().'/img/img-05-copy.jpg' ?>) no-repeat;background-size:100%;">
         
         <section class=" full-width">        
           <div class="m-12 l-6 xl-7 xxl-8">
-            <img class="margin-top-20 center" src="http://localhost/fitnation-v2/wp-content/uploads/2018/09/ambassador.png" alt="">
+            <img class="margin-top-20 center" src="<?php echo get_template_directory_uri().'/img/ambassador.png' ?>" alt="">
           </div>         
           <div class=" m-12 l-6 xl-5 xxl-4">
             <div class="l-12 padding-2x">
@@ -33,7 +33,7 @@ while(have_posts()): the_post();
             <p>A young Nepalese fitness athlete residing in Kathmandu, standing as an idol for many youths of the nation. His passion for fitness has been admired by people of all age groups. Sukadev came into rise and earned his respect after his comeback from a horrific life threatening accident that occurred in 2nd of Octobor 2015.</p>
         </div>
         <div class="s-12 m-6">
-          <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/about-sukadevdai.png">
+          <img src="<?php echo get_template_directory_uri().'/img/about-sukadevdai.png' ?>">
         </div>
       </section>
 

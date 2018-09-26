@@ -10,11 +10,11 @@ while(have_posts()): the_post();
 	<!-- MAIN -->
     <main role="main" class="ambassador-page">
       <!-- Brand Ambassad -->
-      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(http://localhost/fitnation-v2/wp-content/uploads/2018/09/img-05-copy.jpg)">
+      <header class="section-top-padding background-image text-center" style="background:linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.65)),url(<?php echo get_template_directory_uri().'/img/img-05-copy.jpg' ?>)">
         
         <section class=" full-width">        
           <div class="m-12 l-6 xl-7 xxl-8">
-            <img class="margin-top-20 center" src="http://localhost/fitnation-v2/wp-content/uploads/2018/09/halloffame.png" alt="">
+            <img class="margin-top-20 center" src="<?php echo get_template_directory_uri().'/img/halloffame.png' ?>" alt="">
           </div>         
           <div class=" m-12 l-6 xl-5 xxl-4">
             <div class="l-12 padding-2x">
@@ -34,7 +34,7 @@ while(have_posts()): the_post();
             <p>Bodybuilding has been a part of Nepalese society for many decades now. Fitness athletes in Nepal have been struggling a lot to make bodybuilding a mainstream sport in our society. Undoubtedly a lot has been achieved today in this field through their hard work and consistency but it still lacks behind in many aspects compared to the progress that has been made globally by other countries in the same field. </p>
         </div>
         <div class="s-12 m-6">
-          <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/hall1.png">
+          <img src="<?php echo get_template_directory_uri().'/img/hall1.png' ?>">
         </div>
       </section>
 
@@ -99,7 +99,7 @@ while(have_posts()): the_post();
           </li>
         </ul>
       </section> -->
-      <section class="halloffame-slider clearfix">
+      <!-- <section class="halloffame-slider clearfix">
         <div class="line text-center">
           <p class="text-primary text-size-20">Respected Fitness Enthusiasts</p>
           <h2 class="text-dark text-size-50 text-m-size-40">Our <b>Hall of Famers</b></h2>
@@ -129,7 +129,7 @@ while(have_posts()): the_post();
 
             </div>
             <div class="fame-image">
-              <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold.png">
+              <img src="<?php //echo get_template_directory_uri().'/img/arnold.png' ?>">
             </div>
           </li>          <li class="clearfix">
 
@@ -154,7 +154,7 @@ while(have_posts()): the_post();
 
             </div>
             <div class="fame-image">
-              <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold.png">
+              <img src="<?php //echo get_template_directory_uri().'/img/arnold.png' ?>">
             </div>
           </li>          <li class="clearfix">
 
@@ -179,7 +179,7 @@ while(have_posts()): the_post();
 
             </div>
             <div class="fame-image">
-              <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold.png">
+              <img src="<?php //echo get_template_directory_uri().'/img/arnold.png' ?>">
             </div>
           </li>          <li class="clearfix">
 
@@ -204,27 +204,27 @@ while(have_posts()): the_post();
 
             </div>
             <div class="fame-image">
-              <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold.png">
+              <img src="<?php //echo get_template_directory_uri().'/img/arnold.png' ?>">
             </div>
           </li>
         </ul>
 
         <ul class="slider slider-nav">
           <li>
-            <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold-square.png">
+            <img src="<?php //echo get_template_directory_uri().'/img/arnold-square.png' ?>">
             <h2 class="person-name">Arnold Schwenzier</h2>
           </li> <li>
-            <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold-square.png">
+            <img src="<?php //echo get_template_directory_uri().'/img/arnold-square.png' ?>">
             <h2 class="person-name">Arnold Schwenzier</h2>
           </li> <li>
-            <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold-square.png">
+            <img src="<?php //echo get_template_directory_uri().'/img/arnold-square.png' ?>">
             <h2 class="person-name">Arnold Schwenzier</h2>
           </li> <li>
-            <img src="http://localhost/fitnation-v2/wp-content/themes/fitnation/img/arnold-square.png">
+            <img src="<?php //echo get_template_directory_uri().'/img/arnold-square.png' ?>">
             <h2 class="person-name">Arnold Schwenzier</h2>
           </li>
         </ul>
-      </section>
+      </section> -->
     </main>
 <?php
 endwhile;
