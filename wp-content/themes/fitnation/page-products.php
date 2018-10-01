@@ -32,19 +32,19 @@
 			        <img class="arrow-object" src="<?php echo get_template_directory_uri() . '/img/arrow-object-black.svg'; ?>" alt="">
 			      </header>
 					<section class="section-small-padding text-center" style="background: #000;">
-					        <div class="line">
-					          <div class="m-10 l-6 xl-4 center">
-					            <div class="margin" style="display: flex;align-items: center;">
-					              <a class="s-12 m-6 margin-s-bottom" href="/">
-									<h1 class="text-white"><b>Products By</b></h1>
-					              </a>
-					              <a class="s-12 m-6" href="musclepharm.com">
-					                <img class="full-img" src="http://www.fitnation.com.np/wp-content/themes/tyche-child/assets/images/musclepharm-invert.png" alt="">
-					              </a>
-					            </div>
-					          </div>
-					        </div>
-					      </section>
+				        <div class="line">
+				          <div class="m-10 l-6 xl-4 center">
+				            <div class="margin" style="display: flex;align-items: center;">
+				              <a class="s-12 m-6 margin-s-bottom" href="/">
+								<h1 class="text-white"><b>Products By</b></h1>
+				              </a>
+				              <a class="s-12 m-6" href="musclepharm.com">
+				                <img class="full-img" src="http://www.fitnation.com.np/wp-content/themes/tyche-child/assets/images/musclepharm-invert.png" alt="">
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+			        </section>
 		    	<section class="section-top-padding background-white">
 		    		<div class="line text-center">
 			          <h2 class="text-dark text-size-50 text-m-size-40"><?php the_title( ); ?></h2>
