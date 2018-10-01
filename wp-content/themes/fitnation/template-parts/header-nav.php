@@ -15,8 +15,9 @@
     </div>                  
     <p class="nav-text"></p>
     <?php
-        $header_menu = wp_get_nav_menu_items('main-menu');
+        $header_menu = array_values(wp_get_nav_menu_items('main-menu'));
         $total_menu = count($header_menu);
+        // var_dump($header_menu);die;
 
     ?>
     <!-- left menu items -->

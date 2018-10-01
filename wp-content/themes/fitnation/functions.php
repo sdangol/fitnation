@@ -159,7 +159,7 @@ function fitnation_new_user_approve_registration_message(){
 
         if( isset($_REQUEST['approved']) ){
                 $approved = $_REQUEST['approved'];
-                if ($approved == 'false')  echo '<p class="registration successful">Registration successful! You will be notified upon approval of your account.</p>';
+                if ($approved == 'false')  echo '<p class="woocommerce-message">Registration successful! You will be notified upon approval of your account.</p>';
                 else echo $not_approved_message;
         }
 }
@@ -203,3 +203,21 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // add_filter('show_admin_bar', '__return_true');
 
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_price');
+
+
+add_filter ( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
+function misha_remove_my_account_links( $menu_links ){
+ 
+	// unset( $menu_links['edit-address'] ); // Addresses
+ 
+ 
+	//unset( $menu_links['dashboard'] ); // Dashboard
+	//unset( $menu_links['payment-methods'] ); // Payment Methods
+	//unset( $menu_links['orders'] ); // Orders
+	unset( $menu_links['downloads'] ); // Downloads
+	//unset( $menu_links['edit-account'] ); // Account details
+	//unset( $menu_links['customer-logout'] ); // Logout
+ 
+	return $menu_links;
+ 
+}

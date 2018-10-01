@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php wc_print_notices(); ?>
 
 <?php do_action( 'woocommerce_before_customer_login_form' ); ?>
-
+<div class="login_register">
 <?php if ( isset($_GET['action']) && $_GET['action'] == 'login'): ?>
 
 <!-- <div class="u-columns col2-set" id="customer_login">
@@ -62,6 +62,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</p>
 			<p class="woocommerce-LostPassword lost_password">
 				<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>
+			</p>
+
+			<p class="woocommerce-registerPage">
+				<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ).'?action=register'; ?>"><?php esc_html_e( 'Register', 'woocommerce' ); ?></a>
 			</p>
 
 			<?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -114,5 +118,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</form>
 		
 <?php endif; ?>
-
+</div>
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>

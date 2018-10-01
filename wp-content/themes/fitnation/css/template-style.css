@@ -2216,33 +2216,33 @@ footer ul li a:hover{
 }
 
 /*  login-register page */
-#customer_login div{
+#customer_login .login_register{
   margin: 0 auto;
   float: none;
 }
-#customer_login div h2{
+#customer_login .login_register h2{
   text-align: center;
 }
-#customer_login div form{
+#customer_login .login_register form{
   border: none;
   max-width: 500px;
   margin: 0 auto;
 }
-#customer_login div form button{
+#customer_login .login_register form button{
   width: 100% !important;
   background: #cd152e;
   color: #fff;
   padding: 13px 18px;
   margin-top: 10px;
 }
-#customer_login div form input{
+#customer_login .login_register form input{
   appearance: none !important;
   -webkit-appearance: none !important;
   border: none;
   padding: 13px 18px;
   background-color: #dcdcdc !important;
 }
-#customer_login div form input[type='checkbox']{
+#customer_login .login_register form input[type='checkbox']{
   appearance: checkbox !important;
   -webkit-appearance: checkbox !important;
 }
