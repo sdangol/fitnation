@@ -4,3 +4,6 @@ Theme URI: http://fitnation.com.np
 Author: FitNation
 Text Domain: fitnation
 */
+.button.product_type_simple.ajax_add_to_cart{
+	display: none;
+}

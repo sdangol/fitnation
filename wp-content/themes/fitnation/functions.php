@@ -20,6 +20,7 @@ function fitnation_scripts() {
 	wp_enqueue_style( 'slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' ) ;
 	wp_enqueue_style( 'slickertheme', get_template_directory_uri().'/css/slick-theme.css' ) ;
 	wp_enqueue_style( 'fitnation-template-style', get_template_directory_uri().'/css/template-style.css' ) ;
+	wp_enqueue_style( 'fitnation-main-style', get_stylesheet_uri() ) ;
 	wp_enqueue_style( 'fitnation-google-fonts', "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" );
 
 
@@ -203,6 +204,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // add_filter('show_admin_bar', '__return_true');
 
 remove_action('woocommerce_single_product_summary','woocommerce_template_single_price');
+remove_action('woocommerce_after_shop_loop_item','woocommerce_template_loop_add_to_cart');
 
 
 add_filter ( 'woocommerce_account_menu_items', 'misha_remove_my_account_links' );
