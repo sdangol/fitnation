@@ -2099,9 +2099,9 @@ footer ul li a:hover{
     background: #454545;
     padding: 10px 20px;
 }
-.woocommerce div.product div.summary .price::before{
+/*.woocommerce div.product div.summary .price::before{
   content: "Rs";
-}
+}*/
 .woocommerce div.product div.summary .woocommerce-product-details__short-description p strong{
   color: #17a55a;
   font-size: 18px;

@@ -82,7 +82,6 @@ if ( ! empty( $_POST['action'] ) && in_array( $_POST['action'], $core_actions_po
 	add_action( 'wp_ajax_' . $_POST['action'], 'wp_ajax_' . str_replace( '-', '_', $_POST['action'] ), 1 );
 
 add_action( 'wp_ajax_nopriv_heartbeat', 'wp_ajax_nopriv_heartbeat', 1 );
-
 if ( is_user_logged_in() ) {
 	// If no action is registered, return a Bad Request response.
 	if ( ! has_action( 'wp_ajax_' . $_REQUEST['action'] ) ) {
@@ -98,6 +97,7 @@ if ( is_user_logged_in() ) {
 	 * @since 2.1.0
 	 */
 	do_action( 'wp_ajax_' . $_REQUEST['action'] );
+	var_dump('asd');
 } else {
 	// If no action is registered, return a Bad Request response.
 	if ( ! has_action( 'wp_ajax_nopriv_' . $_REQUEST['action'] ) ) {
